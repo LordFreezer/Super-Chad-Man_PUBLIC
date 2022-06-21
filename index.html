@@ -1,0 +1,80 @@
+<style>
+    body {
+        margin: 0;
+        background-color: black;
+        padding: 10px 20px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+    .text {
+        color: white;
+        font-family: sans-serif;
+        font-size: 14px;
+        margin: 10;
+    }	
+
+    .image {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -400px;
+    }
+	
+	
+    .btn {
+		
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+	.center{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+    .btn1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #2121DE;
+        border-width: thick;
+    }
+
+    .btn1:hover {
+        background-color: #2121DE;
+        color: #FFFF00;
+    }
+</style>
+<link rel="icon" href="./img/chadpowered.png" type="image/x-icon">
+
+<title>Super Chadman</title>
+<audio loop autoplay id="myAudio">
+    <source src="./music/Sparrow.wav" type="audio/wav">
+    </source>
+</audio>
+<div id="center" class="center">
+	<button type="button" class="btn btn1" id="play">Play</button>
+</div>
+
+
+
+<div id="scoreDis">
+    <p class="text">
+        <span>Score: </span><span id="scoreEl">0</span>
+    </p>
+	<button type="muted" id="muted">Mute Music</button>
+</div>
+
+<canvas id="pad"></canvas>
+
+<script src="index.js"></script>
